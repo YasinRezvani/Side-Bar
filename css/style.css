@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sahel;
+    list-style: none;
+}
+
+.sidebar{
+    position: fixed;
+    right: -250px;
+    background: #042331;
+    height: 100%;
+    width: 250px;
+    transition: all 0.7s ease;
+}
+
+.sidebar header{
+    font-size: 22px;
+    line-height: 70px;   
+    color: white;
+    background-color: #063146;
+    user-select: none;
+}
+.aa{
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.sidebar ul li a {
+   color: white;
+   display: block;
+   width: 100%; 
+   height: 100%;
+   line-height: 65px;
+   padding-right: 40px;
+   box-sizing: border-box;
+   border-top: 1px solid rgba(255, 255, 255, 0.1);
+   border-bottom: 1px solid black;
+   transition: 0.45s;
+}
+
+.sidebar ul li:hover a{
+    padding-right: 50px;
+}
+
+.zz{
+    margin-left: 13px;
+}
+#check{
+    display: none;
+}
+
+label #btn-bar,label #btn-cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 4px;
+}
+
+label #btn-bar{
+    right: 40px;
+    top: 25px;
+    font-size: 28px;
+    color:  white;
+    padding: 6px 10px;
+    transition: 0.5s ease;
+}
+
+label #btn-cancel{
+    z-index: 0;
+    right: -195px;
+    top: 17px;
+    font-size: 26px;
+    padding: 5px 9px;
+    color: #0a5275;
+    transition: 0.7s all;
+}
+
+#check:checked ~ .sidebar{
+    right: 0;
+}
+ 
+#check:checked ~ label #btn-bar{
+    right: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #btn-cancel{
+    right: 195px;
+    z-index: 1;
+    transition-delay: 0.01s ;
+}
+
+
+section{
+    background: url(../img/pexels-charles-parker-5845712.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    transition: all 0.5s;
+}
+
+
+
